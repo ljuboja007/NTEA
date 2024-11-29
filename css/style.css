@@ -666,7 +666,7 @@
 #about-tea-container{
     height: 300px;
     width: 100%;
-    background-image: url(/assets/images/about-tea2.jpg);
+    background-image: url(../assets/images/about-tea2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
