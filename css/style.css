@@ -60,26 +60,33 @@
 
 #menu{
     height: 80px;
-    width: 700px;
+    width: 800px;
     text-align: center;
 }
 
 #menu li{
     list-style-type: none;
     display: inline-block;
-    padding: 30px;
+    padding: 30px 0px;
 }
 
-#menu a{
-    color: #0A0804;
+.menul{
+    height: 50px;
+    width: 100px;
+    padding: 10px 30px;
+    color: #000;
     font-weight: 900;
     font-size: 18px;
     text-transform: uppercase;
+    transition: color 0.4s;
 }
 
-#menu a:hover{
+.menul.active{
     color: #6db33f;
-    transition: 1s;
+}
+
+.menul:hover{
+    color: #6db33f;
 }
 
 #slwc{
@@ -137,7 +144,7 @@
 #container1{
     height: 1000px;
     width: 100%;
-    background-image: url(../assets/images/tea_container11111.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/images/tea_container11111.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,31 +171,31 @@
     border: 2px solid #fff;
     border-radius: 15px 0px 15px 0px;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
-    font-weight: 700;
-    text-shadow: 2px 2px #000; 
+    font-weight: 700; 
+    transition: color 0.5s, background-color 0.5s, text-shadow 0.5s;
+    text-shadow: 1px 1px #666666;
 }
 
 #container1-block a:hover{
     color: #6db33f;
     background-color: #fff;
-    text-shadow: 2px 2px #666666;
-    transition: 0.5s;
 }
 
 #container1-block h1{
-    font-size: 38px;
+    font-size: 52px;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: 2px 2px #000; 
+    margin-bottom: 30px;
+    text-shadow: 1px 1px #666666;
 }
 
 #container1-block p{
-    margin: 30px 0px;
-    font-size: 22px;
+    margin-bottom: 50px;
+    font-size: 26px;
     color: #fff;
-    text-shadow: 2px 2px #000; 
+    text-shadow: 1px 1px #666666;
 }
 
                     /* End of Container1 */
@@ -209,21 +216,20 @@
 }
 
 .container2-block:nth-child(2){
-    background-color: #bfbdbd;
+    background-color: #dedede;
 }
 
 .container2-block:nth-child(4){
-    background-color: #bfbdbd;
+    background-color: #dedede;
 }
 
 .container2-block:hover{
     color: #fff;
     transition: 1s;
-    text-shadow: 1px 1px #adadad;
-    background-image: url(../assets/images/cup-of-tea1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/cup-of-tea1.jpg);
     background-size: cover;
     background-position: center;
-    opacity: 0.9;
+    font-weight: bold;
 }
 
 .container2-block img{
@@ -232,7 +238,7 @@
 
 .container2-block h3{
     color: #6db33f;
-    font-size: 24px;
+    font-size: 28px;
     margin: 30px 0px;
 }
 
@@ -266,20 +272,21 @@
 
 #container3-block{
     height: 500px;
-    width: 1240px;
+    width: 1640px;
     background-color: transparent;
     margin: 0px auto;
 }
 
 #container3-block1{
     height: 400px;
-    width: 600px;
+    width: 800px;
     float: left;
     margin: 50px 0px;
-    background-image: url(../assets/images/cup-of-tea.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/cup-of-tea.jpg);
     background-size: cover;
     background-position: center;
     border: 2px solid #000;
+    transition: color 1s, opacity 1s;
 }
 
 #container3-block1 img{
@@ -289,7 +296,6 @@
 
 #container3-block1:hover{
     opacity: 0.7;
-    transition: 2s;
 }
 
 
@@ -302,18 +308,18 @@
     color: #fff;
     font-size: 22px;
     text-shadow: 1px 1px #666666;
+    transition: color 1s, background-color 1s;
 }
 
 #container3-block1 a:hover{
     border-color: #fff;
     background-color: #fff;
     color: #6db33f;
-    transition: 1s;
 }
 
 #container3-block2{
     height: 400px;
-    width: 600px;
+    width: 800px;
     background-color: transparent;
     float: right;
     margin: 50px 0px;
@@ -323,23 +329,26 @@
     height: 130px;
     width: 100%;
     background-image: url(../assets/images/bc.jpg);
+    background-size: cover;
     float: left;
     margin-bottom: 7px;
     text-align: left;
     border: 2px solid #0A0804;
-    border-radius: 0px 30px 0px 30px;
-    
+    border-radius: 0px 30px 0px 30px;  
 }
 
 .block2-b h4{
     font-size: 28px;
     text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .block2-b p{
     font-size: 16px;
     text-transform: uppercase;
     color: #000;
+    margin-left: 10px;
 }
 
                     /* End of Container3 */
@@ -347,7 +356,7 @@
 #achievement{
     height: 300px;
     width: 100%;
-    background-image: url(../assets/images/achievement.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/achievement.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -403,11 +412,11 @@
 
 .c4-img img{
     height: 100%;
+    transition: 1s;
 }
 
 .c4-img img:hover{
     opacity: 0.5;
-    transition: 1s;
 }
 
 .c4-data{
@@ -435,12 +444,12 @@
     border-radius: 10px 0px 10px 0px;
     font-size: 18px;
     font-weight: bold;
+    transition: color 0.5s, border-color 0.5s;
 }
 
 #c4-a a:hover{
     color: #6db33f;
     border-color: #6db33f;
-    transition: 0.5s;
 }
 
                     /* End of Container4 */
@@ -448,7 +457,7 @@
 #content{
     height: 250px;
     width: 100%;
-    background-image: url(../assets/images/content.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/content.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -478,12 +487,12 @@
     border-radius: 10px 0px 10px 0px;
     font-size: 18px;
     font-weight: bold;
+    transition: color 0.7s, border-color 0.7s, background-color 0.7s;
 }
 
 #content a:hover{
     color: #6db33f;
     border-color: #6db33f;
-    transition: 1s;
     background-color: #fff;
 }
 
@@ -560,7 +569,7 @@
 
 #footer-b1{
     height: 120px;
-    width: 60%;
+    width: 80%;
     background-color: #fff;
     margin: 0px auto;
     display: flex;
@@ -573,7 +582,7 @@
 }
 
 #footer-ic{
-    height: 100%;
+    height: 80%;
     width: 20%;
     background-color: transparent;
     display: flex;
@@ -587,7 +596,7 @@
 
 #footer-b2{
     height: 200px;
-    width: 60%;
+    width: 80%;
     background-color: #fff;
     margin: 20px auto;
     display: flex;
@@ -622,7 +631,7 @@
 
 #footer-contact{
     height: 100%;
-    width: 25%;
+    width: 19%;
     background-color: #fff;
 }
 
@@ -641,6 +650,28 @@
     width: 40%;
     background-color: #fff;
     text-align: center;
+}
+
+#footer-sub input[type="email"]{
+    font-size: 20px;
+    padding: 3px;
+    border-color: #6db33f;
+}
+
+#footer-sub input[type="submit"]{
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #6db33f;
+    padding: 3px;
+    border-radius: 0px 0px 10px 0px;
+    font-weight: bold;
+
+}
+
+#footer-sub input[type="submit"]:hover{
+    border-color: #6db33f;
+    color: #6db33f;
+    transition: 0.5s;
 }
 
 #footer-sub h3{
@@ -666,35 +697,20 @@
 #about-tea-container{
     height: 300px;
     width: 100%;
-    background-image: url(../images/about-tea2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/about-tea2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#a-t-c{
-    height: 200px;
-    width: 300px;
-    background-color: transparent;
-    text-align: center;
-    margin: 0px auto;
-}
-
-#about-tea-container h2{
+#about-tea-container h1{
     margin-top: 50px auto;
-    font-size: 48px;
+    font-size: 58px;
     color: #fff;
     text-shadow: 2px 2px #000;
-}
- 
-#about-tea-container p{
-    margin: 0px auto;
-    font-size: 28px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    margin-top: 30px;
 }
 
                     /* End of About-tea-container */
@@ -711,11 +727,20 @@
     margin: 30px 10px;
 }
 
-#about-tea-menu a{
+.atmenul{
     color: #000;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
+    transition: color 1s;
+}
+
+.atmenul:hover{
+    color: #6db33f;
+}
+
+.atmenul.active{
+    color: #6db33f;
 }
 
 #about-tea-menu a:hover{
@@ -753,7 +778,6 @@
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #000;
 }
 
 .a-t-b-img{
@@ -979,35 +1003,20 @@
 #shop-container{
     height: 300px;
     width: 100%;
-    background-image: url(/assets/images/shop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/shop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#shop{
-    height: 200px;
-    width: 300px;
-    background-color: transparent;
-    text-align: center;
-    margin: 0px auto;
-}
-
-#shop-container h2{
+#shop-container h1{
     margin-top: 50px auto;
-    font-size: 48px;
+    font-size: 58px;
     color: #fff;
     text-shadow: 2px 2px #000;
-}
- 
-#shop-container p{
-    margin: 0px auto;
-    font-size: 28px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    margin-top: 30px;
 }
 
                     /* End of Shop-container */
@@ -1065,6 +1074,7 @@
     background-color: #f2f2f2;
     text-align: center;
     border: 1px solid #000;
+    transition: background-color 0.5s, border-color 0.5s;
 }
 
 .shop-item-data h5{
@@ -1081,7 +1091,6 @@
 .shop-item-data:hover{
     color: #6db33f;
     background-color: #fff;
-    transition: 0.5s;
     border-color: #6db33f;
 }
 
@@ -1192,11 +1201,11 @@
     border-color: #000;
     background-color: #fff;
     font-weight: bold;
+    transition: background-color 1s, color 1s, border-color 1s;
 }
 
 #shop-submit:hover{
     color: #6db33f;
-    transition: 0.5s;
     border-color: #6db33f;
 }
 
@@ -1219,34 +1228,20 @@
 #gallery-container{
     height: 300px;
     width: 100%;
-    background-image: url(/assets/images/tea_container1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/tea_container1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#gallery{
-    height: 200px;
-    width: 300px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-#gallery-container h2{
+#gallery-container h1{
     margin-top: 50px auto;
-    font-size: 48px;
+    font-size: 58px;
     color: #fff;
     text-shadow: 2px 2px #000;
-}
- 
-#gallery-container p{
-    margin: 0px auto;
-    font-size: 28px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    margin-top: 30px;
 }                                                        
 
                     /* End of Gallery-container */
@@ -1307,36 +1302,21 @@
 #about-us-container{
     height: 300px;
     width: 100%;
-    background-image: url(/assets/images/about-us1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/about-us1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
     
-#about-us{
-    height: 200px;
-    width: 300px;
-    background-color: transparent;
-    text-align: center;
-    margin: 0px auto;
-}
-    
-#about-us-container h2{
+#about-us-container h1{
     margin-top: 50px auto;
-    font-size: 48px;
+    font-size: 58px;
     color: #fff;
     text-shadow: 2px 2px #000;
-}
-     
-#about-us-container p{
-    margin: 0px auto;
-    font-size: 28px;
-    color: #fff;
-    text-shadow: 2px 2px #000;
-    margin-top: 30px;
-}                                                        
+}                                                       
     
                         /* End of About-us-container */
 
@@ -1361,7 +1341,12 @@
     list-style-type: none;
 }
 
-#au-menu a{
+#au-menu a:hover{
+    color: #6db33f;
+    transition: 0.5s;
+}
+
+.aumenul{
     color: #000;
     font-size: 24px;
     padding: 15px;
@@ -1370,7 +1355,7 @@
     border-bottom: 1px solid #666666;
 }
 
-#au-menu a:hover{
+.aumenul.active{
     color: #6db33f;
 }
 
@@ -1561,11 +1546,12 @@
 
 #lh form .login-container input[type="submit"]{
     border: 1px solid #000;
+    border-radius: 10px 0px 10px 0px;
+    transition: color 0.4s, background-color 0.4s;
 }
 
 #lh form .login-container input[type="submit"]:hover{
     opacity: 0.7;
     color: #6db33f;
-    transition: 0.3s;
     background-color: #fff;
 }
