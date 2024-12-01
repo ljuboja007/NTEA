@@ -198,6 +198,27 @@
     text-shadow: 1px 1px #666666;
 }
 
+#container1-block{
+    animation-name: SlideInLeft;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in ;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-direction: normal;
+
+}
+@keyframes SlideInLeft{
+    from{
+        transform: translateX(-1000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
                     /* End of Container1 */
 
 #container2{
@@ -229,7 +250,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/cup-of-tea1.jpg);
     background-size: cover;
     background-position: center;
-    font-weight: bold;
 }
 
 .container2-block img{
@@ -243,7 +263,7 @@
 }
 
 .container2-block p{
-    font-size: 18px;
+    font-size: 22px;
 }
 
                     /* End of Container2 */
@@ -259,14 +279,14 @@
 #container3 h2{
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-size: 52px;
+    font-size: 58px;
     text-shadow: 1px 1px #000;
     color: #6db33f;
 }
 
-#container3 p{
+#container3 h3{
     margin: 30px 0px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -345,10 +365,11 @@
 }
 
 .block2-b p{
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #000;
-    margin-left: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
 }
 
                     /* End of Container3 */
@@ -973,7 +994,7 @@
 
 .ath-data hr{
     width: 50%;
-    height: 10px;
+    height: 5px;
     background-color: #000;
     border-radius: 10px;
 }
