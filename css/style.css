@@ -2,7 +2,9 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Light', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;                                        
 }
 
 .cleaner{
@@ -16,7 +18,7 @@
                     /* End of Frame */
 
 #social-icon{
-    height: 20px;
+    height: 30px;
     width: 100%;
     background-color: #6db33f;
     position: relative;
@@ -36,6 +38,7 @@
 
 #si i{
     margin-right: 7px;
+    font-size: 25px;
 }
 
                     /* End of Social-icon */
@@ -60,14 +63,14 @@
 
 #menu{
     height: 80px;
-    width: 800px;
+    width: 1400px;
     text-align: center;
 }
 
 #menu li{
     list-style-type: none;
     display: inline-block;
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 .menul{
@@ -76,7 +79,7 @@
     padding: 10px 30px;
     color: #000;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 26px;
     text-transform: uppercase;
     transition: color 0.4s;
 }
@@ -93,51 +96,20 @@
     height: 80px;
     width: 320px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#search{
-    height: 80px;
-    width: 80px;
-    text-align: center;
+#slwc a{
+    color: #000;
+    font-size: 30px;
+    margin-right: 30px;
 }
 
-#search img{
-    width: 50px;
-    padding-top: 15px;
+#slwc a:nth-of-type(2){
+    color: #6db33f;
 }
 
-#login{
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-#login img{
-    width: 35px;
-    padding-top: 20px;
-}
-
-#wishlist{
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-#wishlist img{
-    width: 50px;
-    padding-top: 15px;
-}
-
-#cart{
-    height: 80px;
-    width: 80px;
-    text-align: center;
-}
-
-#cart img{
-    width: 50px;
-    padding-top: 15px;
-}
 
                     /* End of Header */
 
@@ -224,7 +196,6 @@
 #container2{
     height: 300px;
     width: 100%;
-    background-color: transparent;
     display: flex;
 }
 
@@ -234,6 +205,7 @@
     background-color: #f2f2f2;
     border: 1px solid #adadad;
     text-align: center;
+    transition: 1s;
 }
 
 .container2-block:nth-child(2){
@@ -245,11 +217,7 @@
 }
 
 .container2-block:hover{
-    color: #fff;
-    transition: 1s;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/cup-of-tea1.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: #c9c9c9;
 }
 
 .container2-block img{
@@ -605,14 +573,14 @@
 #footer-ic{
     height: 80%;
     width: 20%;
-    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items: end;
 }
 
-#footer-ic img{
-    height: 40px;
+#footer-ic a i{
+    color: #000;
+    font-size: 45px;
 }
 
 #footer-b2{
@@ -774,7 +742,6 @@
 #about-tea-holder{
     height: 1000px;
     width: 100%;
-    background-color: transparent;
 }
 
 #about-tea-holder hr{
@@ -787,7 +754,6 @@
 .a-t1{
     height: 380px;
     width: 100%;
-    background-color: transparent;
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
@@ -796,7 +762,6 @@
 .a-t-b{
     height: 100%;
     width: 35%;
-    background-color: transparent;
     display: flex;
     justify-content: space-between;
 }
@@ -804,7 +769,6 @@
 .a-t-b-img{
     height: 100%;
     width: 48%;
-    background-color: transparent;
     border-right: 1px solid #000;
 }
 
@@ -833,8 +797,7 @@
 
 #about-tea1{
     height: 800px;
-    width: 60%;
-    background-color: transparent;
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
@@ -843,7 +806,7 @@
 #a-t1-b1{
     height: 100px;
     width: 100%;
-    background-color: transparent;
+
     margin-top: 30px;
 }
 
@@ -874,7 +837,7 @@
 #a-t1-b3{
     height: 200px;
     width: 100%;
-    background-color: transparent;
+
 }
 
 #a-t1-b3 p{
@@ -885,15 +848,13 @@
 
 #about-tea-recipes{
     height: 1000px;
-    width: 60%;
-    background-color: transparent;
+    width: 80%;
     margin: 20px auto;
 }
 
 #a-t-r1{
     height: 100px;
     width: 100%;
-    background-color: transparent;
 }
 
 #a-t-r1 h2{
@@ -915,7 +876,6 @@
 .a-t-r2{
     height: 400px;
     width: 100%;
-    background-color: transparent;
     margin: 50px 0px;
     display: flex;
     justify-content: space-between;
@@ -945,8 +905,7 @@
 
 #about-tea-health{
     height: 1200px;
-    width: 60%;
-    background-color: transparent;
+    width: 80%;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -956,15 +915,15 @@
 .a-t-h{
     height: 30%;
     width: 100%;
-    background-color: transparent;
     display: flex;
     justify-content: space-between;
+    background-color: #f2f2f2;
 }
 
 
 .ath-img{
     height: 100%;
-    width: 50%;
+    width: 48%;
     background-image: url(../assets/images/ath3.jpg);
     background-position: center;
     background-size: cover;
@@ -976,9 +935,10 @@
 
 .ath-data{
     height: 100%;
-    width: 50%;
+    width: 48%;
     background-color: #f2f2f2;
     border-left: 2px solid #6db33f;
+    padding-left: 30px;
 }
 
 .ath-data:nth-child(2){
